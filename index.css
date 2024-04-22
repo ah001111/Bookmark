@@ -1,0 +1,82 @@
+body {
+    background-color: #f7ecde;
+}
+
+.btn {
+    padding: 0.3rem 3.5rem;
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    color: #352e28;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    width: 16.6rem;
+    height: 1.2rem;
+    background-color: #fec260;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -9;
+    transition: 0.5s;
+}
+
+h1:hover::after{
+    height: 2.4rem;
+}
+
+h2 {
+    font-size: 1.5625rem;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    background: rgb(64, 165, 91);
+    background: linear-gradient(90deg, rgba(59, 160, 43, 0.984) 43%, rgb(180, 120, 47) 73%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line {
+    border-width: 0.125rem 0rem 0.125rem 0rem;
+    border-color: rgb(37, 37, 37);
+    border-style: dotted;
+}
+
+ /* conent */
+
+.conent {
+    width: 31.25rem;
+}
+
+.conent p {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-size: 1.3125rem;
+}
+
+.circles span {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.fs-18{
+    font-size: 1.125rem;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+}
+
+.conent li i{
+    color: #bb4120;
+}
+
+
+.fixedlayer{
+    background-color: rgba(0, 0, 0, 0.7);
+}

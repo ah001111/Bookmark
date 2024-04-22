@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BookMarker</title>
+    <link rel="icon" type="image/x-icon" href="imgs/bookmark.svg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Bookmarker</h1>
+        <div class="line">
+
+            <h2 class="text-center mt-4 mb-4"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i
+                    class="fa-solid fa-bookmark"></i></h2>
+            <form>
+                <label class="mb-2 fw-bolder"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+                <input type="text" class="form-control mb-4" placeholder="Bookmark Name" id="BookmarkName">
+
+                <label class="mb-2 fw-bolder"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+                <input type="text" class="form-control mb-4" placeholder="www.example.com" id="WebsiteURL">
+
+                <button
+                    class="Submit btn btn-success mb-4 position-relative start-50 translate-middle-x">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="table-responsive container mt-4">
+        <table class="table bg-white text-center">
+            <thead>
+                <tr>
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div
+        class="fixedlayer position-fixed top-0 bottom-0 start-0 end-0 d-none justify-content-center align-items-center">
+        <div class="conent bg-white p-4 rounded-2 shadow-lg">
+            <header class="header w-100 d-flex justify-content-between align-items-center mb-4">
+                <div class="circles d-flex">
+                    <span class="rounded-circle me-2 bg-danger"></span>
+                    <span class="rounded-circle me-2 bg-warning"></span>
+                    <span class="rounded-circle me-2 bg-success"></span>
+                </div>
+                <button class="btn border-0 pe-0" id="closeBtn">
+                    <i class="fa-solid fa-xmark close fs-3"></i>
+                </button>
+            </header>
+            <p class="m-0 pb-2 fa-bold">
+                Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ol class="list-unstyled m-0">
+                <li class="fs-18">
+                    <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                    contain at least 3 characters
+                </li>
+                <li class="fs-18">
+                    <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                    valid one
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
